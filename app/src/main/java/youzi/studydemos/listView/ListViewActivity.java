@@ -2,6 +2,7 @@ package youzi.studydemos.listView;
 
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,12 +25,18 @@ public class ListViewActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(ListViewActivity.this,position+""+getStringOfPosition(position),Toast.LENGTH_SHORT).show();
+                switch(position){
+                    case 0:
+                        Intent i = new Intent(ListViewActivity.this,FacnyListActivity.class);
+                        startActivity(i);
+                        break;
+                }
             }
         });
     }
     private List<String> getData(){
         List<String> data = new ArrayList<String>();
-        data.add("BaseListView");
+        data.add("FancyList");
         return data;
     }
     private String getStringOfPosition(int position){
