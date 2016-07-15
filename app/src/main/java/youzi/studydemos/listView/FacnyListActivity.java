@@ -14,6 +14,6 @@ public class FacnyListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facny_list);
         ListView list = (ListView)findViewById(R.id.list);
-        list.setAdapter(new ArrayAdapter<String>(this, R.layout.fancy_list,R.id.label, items));
+        list.setAdapter(new ArrayAdapter<String>(this, R.layout.row_fancy_list,R.id.label, items));
     }
 }
