@@ -18,7 +18,7 @@ import static youzi.studydemos.pattens.IndexListFactory.getInstanceByIndex;
 
 public class MainActivity extends Activity {
     TextView selection;
-    String[] items={"ListView"};
+    String[] items={"①ListView"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

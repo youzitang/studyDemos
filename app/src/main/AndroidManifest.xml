@@ -21,7 +21,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".listView.ListViewActivity" />
         <activity android:name=".listView.FacnyListActivity" />
-        <activity android:name=".listView.ArrayAdapterListActivity"></activity>
+        <activity android:name=".listView.ArrayAdapterListActivity" />
+        <activity android:name=".listView.SimpleAdapterListActivity"></activity>
     </application>
 
 </manifest>

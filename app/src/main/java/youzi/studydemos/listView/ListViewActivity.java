@@ -34,6 +34,10 @@ public class ListViewActivity extends Activity {
                         Intent i1 = new Intent(getApplicationContext(),ArrayAdapterListActivity.class);
                         startActivity(i1);
                         break;
+                    case 2:
+                        Intent i2 = new Intent(ListViewActivity.this,SimpleAdapterListActivity.class);
+                        startActivity(i2);
+                        break;
                     default:
                         Toast.makeText(getApplicationContext(),"没有对应动作",Toast.LENGTH_LONG).show();
                 }
@@ -43,10 +47,10 @@ public class ListViewActivity extends Activity {
     }
     private List<String> getData(){
         List<String> data = new ArrayList<String>();
-        data.add("使用简单的ArrayAdapter");
-        data.add("使用ArrayAdapter");
-        data.add("使用SimpleAdapter");
-        data.add("使用BaseAdapter");
+        data.add("①使用简单的ArrayAdapter");
+        data.add("②使用ArrayAdapter");
+        data.add("③使用SimpleAdapter");
+        data.add("④使用BaseAdapter");
         return data;
     }
     private String getStringOfPosition(int position){
